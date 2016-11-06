@@ -1,0 +1,219 @@
+/*!
+ * 
+ * Grandmills v.1.0.0
+ * 
+ */
+
+
+/*** transition
+---------------------------------------------------- ****/
+a {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+}
+
+.tp-bar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 3px;
+  color: #fff;
+  text-align: center;
+  background-color: #1a1262;
+  position: relative;
+  overflow: hidden;
+}
+.tp-bar::after {
+  width: 100%;
+  height: 4px;
+  display: block;
+  content: '';
+  background-color: #1a1262;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.site-logo {
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+.site-logo::before {
+  background-color: rgb(33,74,185);
+  box-shadow: 20px 0 50px 55px rgba(33, 74, 185, 0.8);
+  border-radius: 50px 25px;
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 25px;
+  top: 25px;
+  right: 25px;
+  bottom: 55px;  
+}
+.site-logo a,
+.site-logo img {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+.site-logo img {
+  width: 110px;
+}
+.watermark {
+  display: none;
+}
+.watermark img {
+  width:375px;
+}
+.tp-focus > img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+.tp-focus .phone a {
+  color: #fff;
+}
+.tp-focus .phone > a::before {
+  width: 30px;
+  height: 29px;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  background-image: url(../images/phone-icon.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: scale(0.7);
+}
+
+
+
+.main {
+  position: relative;
+}
+.main::before, .main::after {
+  display: table;
+  content: '';
+}
+.main::after {
+  clear: both;
+}
+img.quality {
+  display: none;
+}
+.entry {
+  height: 400px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/*.main .entry .lang-strip {background:url(../images/line-left.png) right top no-repeat;}
+.main .entry:last-child .lang-strip  {background:url(../images/line-right.png) left top no-repeat;}*/
+
+.entry .lang-strip {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  color: #fff;
+  background-size:80%;
+  position: absolute;
+  min-height:180px;
+  z-index:99;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.entry .lang-strip a {
+  color: #fff;
+}
+.entry .entry-head {
+  margin-top:10px;
+}
+.entry .entry-head h4 {
+  font-size: 1.8em;
+}
+.entry .entry-head a {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+  position: relative;
+}
+/*.entry .entry-head a::after {
+  width: 31px;
+  height: 33px;
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+  background-position: 0px -32px;
+}*/
+
+.lang-list {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.lang-list li {
+  display: inline-block;
+  position: relative;
+   
+	
+}
+.lang-list li + li {
+  margin-left: 2px;
+}
+.lang-list li + li::before {
+  content: '|';
+  margin-right: 5px;
+}
+
+.site-bottom {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 1.4em;
+  text-align: center;
+  border-top: 10px solid #231f58;
+  background: #003066;
+  background: -moz-linear-gradient(left,  #003066 0%,#0079c1 70%,#003066 100%);
+  background: -webkit-linear-gradient(left,  #003066 0%,#0079c1 70%,#003066 100%);
+  background: linear-gradient(to right,  #003066 0%,#0079c1 70%,#003066 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003066', endColorstr='#0079c1',GradientType=0 );
+}
+.bottom-text img {
+  width:400px;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top:-4px;
+}
+
+.social-links li {
+  display: inline-block;
+}
+.social-links li a {
+  width: 41px;
+  height: 41px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(../images/sprites.png);
+}
+.social-links li a.facebook {
+  background-position: 0px -67px;
+}
+.social-links li a.instagram {
+  background-position: 0px -108px;
+}
+.social-links li a.youtube {
+  background-position: 0px -148px;
+}
+.social-links li a.pinterest {
+  background-position: 0px -189px;
+}
+.social-links li a.twitter {
+  background-position: 0px -229px;
+}
+.social-links li a.bell {
+  background-position: 0px -270px;
+}

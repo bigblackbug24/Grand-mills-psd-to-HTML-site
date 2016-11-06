@@ -1,0 +1,600 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+body{padding:0; margin:0; background-color:#FFF; font-family:'Open Sans', sans-serif; font-weight:400; font-size:15px; color:#111;}
+
+.clear 	{clear:both; display:block; overflow:hidden; visibility:hidden; width: 0; height:0;}
+
+.pad-5 {padding:5px} .pad-10 {padding:10px}	.pad-15 {padding:15px} .pad-20 {padding:20px} .pad-30 {padding:30px} .pad-50 {padding:50px}
+/*margin selectors*/
+.m-a   {margin:auto}
+.m-0   {margin:0}	     .mt-0  {margin-top:0}	     .mb-0  {margin-bottom:0}	.ml-0  {margin-left:0}	 .mr-0 {margin-right:0}
+.mt-5  {margin-top:5px}	 .mb-5  {margin-bottom:5px}	 .ml-5  {margin-left:5px}	.mr-5  {margin-right:5px}	
+.mt-10 {margin-top:10px} .mb-10 {margin-bottom:15px; letter-spacing: 3px; font-weight: 800;}
+.ml-10 {margin-left:10px}.mr-10 {margin-right:10px}
+.mt-15 {margin-top:15px} .mb-15 {margin-bottom:15px} .ml-15 {margin-left:15px}	.mr-15 {margin-right:15px}
+.mt-20 {margin-top:20px} .mb-20 {margin-bottom:20px} .ml-20 {margin-left:20px}	.mr-20 {margin-right:20px}
+.mt-30 {margin-top:30px} .mb-30 {margin-bottom:30px} .ml-30 {margin-left:30px}	.mr-30 {margin-right:30px}
+.mt-minus {margin-top:-30px}
+
+.font_light   {font-weight:300;}
+.font_regular {font-weight:400;}
+.font_smbold  {font-weight:600;}
+.font_bold    {font-weight:700;}
+.font_xbold   {font-weight:800;}
+
+.text_blue  {color:#492f92;}
+.text_blu_tw{color:#55acee;}
+.text_grey  {color:#686868;}
+.text_blck  {color:#000;}
+.text_wht   {color:#fff;}
+.text_orng  {color:#fcb134;}
+/*.text_brwn  {color:#4c400f;}*/
+.text_gren  {color:#c7d138;}
+
+.text_30 {font-size:30px;}
+.text_25 {font-size:25px;}
+.text_20 {font-size:20px;}
+.text_18 {font-size:18px;}
+.text_16 {font-size:16px;}
+.text_14 {font-size:14px;}
+.text_12 {font-size:12px;}
+.text-justify{text-align:justify;}
+
+.under_line {text-decoration:underline;}
+.under_line:hover {text-decoration:none;}
+
+.bg_green {background-color:#c1cd23;}
+.bg_navy  {background-color:#1a1262; color:#FFF;}
+.bg_grey  {background-color:#e7e7e7;}
+.bg_gry_lt{background-color:#f6f6f6;}
+
+.opan    {font-family:'Open Sans', sans-serif;}
+.roboto  {font-family:'Roboto Slab', serif;}
+
+.top_links {margin:0; padding:20px 0; list-style:none; text-align:right;}
+.top_links > li {display:inline-block; padding:0 7px; border-right:#FFF 1px solid;}
+.top_links > li:last-child {border-right:none;}
+.top_links > li > a {display:block; color:#FFF;}
+
+.top_social {margin:0; padding:0; list-style:none; text-align:right;}
+.top_social > li {display:inline-block; padding:0 2px;}
+.top_social > li > a {display:block; color:#1a1262; background-color:#FFF; border-radius:50%; text-align:center; width:40px; height:40px; line-height:40px; border:2px solid transparent;}
+.top_social > li:hover > a {color:#FFF; border-color:#FFF; background-color:transparent;}
+
+.foot_social > li:last-child > a {
+	background-image:url(../images/snapchat-white.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+}
+.top_social > li:last-child > a:hover {background-image:url(../images/snapchat-blue.png);}
+
+.banner {background:url(../images/banner.jpg) center repeat-x; background-size:110%; position:relative;}
+.banner .search-recipes {padding:180px 0;}
+.banner.inner .search-recipes {padding:100px 0;}
+.banner .bann-widgets .col-xs-4 a {
+	background-color:#00a0b0; 
+	text-align:center; 
+	display:block; 
+	font-family:'Roboto Slab', serif; 
+	color:#FFF;
+	text-decoration:none;
+	font-size:18px;
+	height:100px;
+	padding-top:25px;
+}
+.banner .bann-widgets .col-xs-4:first-child a {background-color:#ed1556;}
+.banner .bann-widgets .col-xs-4:last-child a  {background-color:#492f92; padding-top:15px}
+
+.banner .bann-widgets .col-xs-4 a:hover {
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+}
+
+.banner .bann-widgets .col-xs-4 a.active {
+	color:#00a0b0;
+	background-color:#FFF;
+}
+
+.banner .bann-widgets .col-xs-4:first-child a.active {color:#ed1556; background-color:#FFF;}
+.banner .bann-widgets .col-xs-4:last-child a.active  {color:#492f92; background-color:#FFF;}
+
+.mills-recipes {position:relative; margin-bottom:20px;}
+
+.mills-recipes h5.caption {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.7);
+	font-weight:300;
+    position: absolute;
+    z-index: 10;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	margin:0;
+	color:#000;
+	padding:13px;
+}
+
+.mills-recipes .caption-top {
+    background-color: #fff;
+    background-color: rgba(255,255,255,0.7);
+	font-weight:300;
+    position: absolute;
+    z-index: 10;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    left: 0;
+    right: 0;
+    top: 0;
+	margin:0;
+	color:#000;
+	padding:15px;
+	font-weight:300;
+	font-size:12px;
+}
+
+.mills-recipes .caption-top h6 {color:#000; margin:0 0 15px 0;}
+
+.healthy-tips           {font-family:'Roboto Slab', serif; margin:0; padding:0; list-style:none; font-weight:300;}
+.healthy-tips li        {margin-bottom:10px; font-size:25px;}
+.healthy-tips li a      {display:block; padding:20px; color:#FFF; text-decoration:none;}
+.healthy-tips li.orrang {background-color:#fcb134;}
+.healthy-tips li.green  {background-color:#c1cd23;}
+.healthy-tips li.blue   {background-color:#00a0b0;}
+.healthy-tips li.pink   {background-color:#ed1556;}
+.healthy-tips li.prpl   {background-color:#d70c8c;}
+
+.recipy-calculator {
+	background:url(../images/recipy-calculator.jpg) left top -50px;
+	background-size:100%;
+	color:#b6c401;
+	font-family:'Roboto Slab', serif;
+	font-weight:700;
+	font-size:30px;
+	padding:30px;
+	text-decoration:none;
+	display:block;
+	height:200px;
+}
+
+.texture {padding:50px 0;/* background:#e8dfd0 url(../images/texture.jpg*/);}
+
+/* Custom Select Options and Dropdowns */
+
+select.form-control {
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background-color:#FFF;
+  background-image:url(../images/select.png);
+  background-position: 100% center;
+  background-repeat: no-repeat;
+  border:1px solid #000;
+  color:#000;
+  font-family:'Roboto Slab', serif;
+  padding-right:40px;
+}
+
+select.form-control::-ms-expand {display:none;}
+select.form-control:disabled    {background-color:#DDDDDD; cursor:default;}
+select.form-control[multiple]   {height:auto;}
+
+.recipes_items {margin:0; padding:0; list-style:none; font-family:'Roboto Slab', serif;}
+.recipes_items li {font-size:16px; margin-bottom:15px;}
+.recipes_items li a {color:#000;}
+.recipes_items li a .fa {color:#000; margin-right:10px;}
+.recipes_items li:first-child.active a {color:#ed1556;}
+.recipes_items li.active a {color:#00a0b0;}
+.recipes_items li:last-child.active a {color:#492f92;}
+.recipes_items li ol {margin:0; padding:0; list-style:none; margin-left:30px;}
+.recipes_items li ol li {font-size:12px; margin:10px 0;}
+.recipes_items li ol li .fa {color:#000; margin-right:5px;}
+
+#carousel-baking .carousel-caption {
+	background-color:#f4f4f4;
+	color:#492f92;
+	right:0;
+	top:auto;
+	bottom:0;
+	left:0;
+	padding:20px;
+	font-size:20px;
+	font-weight:700;
+	font-family:'Roboto Slab', serif;
+	text-shadow:#FFF 1px 1px;
+}
+
+#carousel-baking .carousel-control {width:15%; top:0; bottom:0; height:auto; color:#FFF;}
+
+#carousel-baking .carousel-control.left {left:0;
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+#carousel-baking .carousel-control.right {right: 0; left: auto;
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+
+.home_link {
+	background-color:#1a1262;
+	color:#FFF;
+	padding:15px 20px 15px 10px;
+	border-radius:0 10px 10px 0;
+	left:0; top:45%;
+	position:fixed;
+	z-index:999;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,1);
+}
+
+.home_link:hover {background-color:#013ce0;}
+
+footer {border-top:#f6f6f6 10px solid; padding-top:50px;}
+.foot_social {margin:0; padding:0; list-style:none;}
+.foot_social > li {display:inline-block; padding:0 3px;}
+.foot_social > li > a {display:block; color:#FFF; background-color:#c1cd23; border-radius:50%; text-align:center; width:50px; height:50px; line-height:45px; border:2px solid transparent;}
+.foot_social > li:hover > a {color:#c1cd23; border-color:#c1cd23; background-color:#FFF;}
+
+.foot_social > li:last-child > a {
+	background-image:url(../images/snapchat-white.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	text-indent:-9999px;
+}
+.foot_social > li:last-child > a:hover {background-image:url(../images/snapchat-green.png);}
+
+.foot_links {margin:0; padding:0; list-style:none; font-family:'Roboto Slab', serif;}
+.foot_links > li {display:inline-block; padding:10px 0; width:30%;}
+.foot_links > li > a {display:block; color:#000;}
+.foot_links > li:hover > a {color:#a9b600;}
+
+.copy {padding:25px 0; color:#FFF; font-size:12px; font-family:'Roboto Slab', serif; background-color:#1a1262;}
+
+.navbar-default .navbar-nav > li > .submenu {display:none; position:absolute; min-width:400px; z-index:999; background-color:#2c2097;}
+.navbar-default .navbar-nav > li:hover > .submenu {display:block; margin:0; padding:0; list-style:none; padding-top:15px;}
+.submenu li   {display:inline-block; width:49%; font-size:14px; vertical-align:top; color:#FFF;}
+.submenu li:before,
+.submenu li:after {display:table; content:""; clear:both;}
+.submenu li a {display:block; padding:10px 15px; color:#FFF; text-shadow:#0c0454 1px 1px; text-decoration:none;}
+.submenu li a:hover {background-color: #1a1263;;}
+.navbar-default .navbar-nav > li:last-child > .submenu    {min-width:100%;}
+.navbar-default .navbar-nav > li:last-child > .submenu li {display:block; width:100%;}
+.submenu li .media {padding:0 0 10px 10px;}
+/*.submenu li .media a {font-size:12px; padding:5px;}*/
+.submenu li .media h5 a {font-size:14px;}
+
+/*=====================FAQ STYLING=======================*/
+.panel-default > .panel-heading {
+    background-color: #FFF;
+    padding:19px 0;
+}
+
+.panel-title a {
+    text-decoration: none;
+    font-family: Roboto Slab;
+}
+
+.panel-title a span {
+	background: url(../images/plus.png) no-repeat;
+	height: 57px;
+	width: 72px;
+	display: inline-block;
+	margin-right: 10px;
+	text-indent: -9999px;
+	float: left;
+	margin-top: -20px;
+}
+.panel-title a:focus span {background:url(../images/minus.png) no-repeat;}
+
+/*.panel-title a span {
+    background-color: #fcb134;
+    padding: 20px 30px 18px;
+    margin-right: 10px;
+}*/
+
+.panel-collapse > .panel-body {
+    padding-left: 70px;
+	font-family:'Roboto Slab', serif;
+}
+
+.panel-collapse > .panel-body h5 {font-size:16px;}
+.panel-collapse > .panel-body p {margin-bottom:15px;}
+.panel-collapse > .panel-body li {margin-bottom:15px;}
+
+.accordion-text {margin-bottom:50px;}
+
+/*=====================POWER OF GRAIN STYLING=======================*/
+.accordion-power-margin li {
+    color: #c1cd23;
+}
+
+.accordion-power-margin li p {
+    color: #000000;
+}
+.accordion-power-margin li strong {
+    color: #000000;
+}
+/*=====================Wheat Millling Process Styling=======================*/
+.text-left{
+    color: #c7d238;
+}
+.accordion-text-milling {
+    margin-bottom: 15px;
+}
+/*=====================Wheat Product Styling=======================*/
+.accordion-wheat-margin {
+    padding-left: 13px;
+}
+.img-wheat-border {
+    border:1px solid #bababa;
+}
+
+.flour-images > .col-md-3 {
+    padding:1px;
+
+}
+.bread-images > .col-md-3 {
+   padding:1px;
+
+}
+.no-padding {
+    padding:0;
+}
+
+.inner-text .right-img {
+    margin-top:22%;
+    
+}
+.semolina-images > .col-md-6 {
+    padding:1px;
+
+}
+/*=====================REGISTRATION STYLING=======================*/
+.section-content {
+    padding-left: 10%;
+}
+.section-heading{
+    padding-left: 10%;
+}
+#review-form .form-control {
+    border-radius: 0;
+    box-shadow: none;
+    height: 55px;
+    border:1px solid #cccccc;
+    color:#000;
+    padding:10px 20px;
+    width:60%
+    
+}
+#review-form .form-group {
+    margin-bottom: 8px;
+}
+
+#review-form .form-group > p {
+    margin-bottom: 20px;
+}
+#review-form .form-control::-moz-placeholder {
+    color: #000;
+}
+.btn-sec .btn {
+    border-radius:0;
+    padding: 10px 25px;
+    margin-left: 5px;
+    
+}
+.btn-options {
+    margin-top: 10px;
+}
+.form-group.clearfix.btn-options {
+    padding-right: 40%;
+}
+.positions-abs {
+    position: absolute;
+}
+
+/*=====================LOGIN STYLING=======================*/
+.forgot-password  {
+    color: #c5d03b;
+    text-decoration: underline;
+}
+#login-form .form-control {
+    border-radius: 0;
+    box-shadow: none;
+    height: 55px;
+    border:1px solid #cccccc;
+    color:#000;
+    padding:10px 20px;
+    width: 90%;
+}
+.form-group.clearfix.btn-option {
+    padding-right: 25%;
+}
+.ml-btn-register {
+    margin-left: 30%;
+}
+.border-right-login {
+    border-right: 8px solid #f6f6f6;
+}
+.margin-left-20 {
+    margin-left:20px;
+}
+
+/*=====================MEDIA QUERY=======================*/
+@media (max-width: 1024px) {
+    
+/*=====================REGISTRATION STYLING=======================*/
+
+#review-form .form-group > p {
+    font-size: 12px;
+    margin-bottom: 28px;
+}
+/*=====================LOGIN STYLING=======================*/
+.ml-btn-register {
+    margin-left: 27%;
+}
+.ml-btn-register {
+    margin-left: 33%;
+}
+.border-right-login {
+    border-right: 8px solid #f6f6f6;
+}
+.form-group.clearfix.btn-option {
+    padding-right: 10%;
+}
+.margin-left-20 {
+    margin-left: -14px;
+}
+.margin-left-20 {
+    margin-left: 30px;
+}
+
+}
+@media (max-width: 800px) {
+/*=====================REGISTRATION STYLING=======================*/
+
+#review-form .form-group > p {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+/*=====================LOGIN STYLING=======================*/
+.ml-btn-register {
+    margin-left: 34%;
+}
+/*=====================LOGIN STYLING=======================*/
+.ml-btn-register {
+    margin-left: 37%;
+}
+.border-right-login {
+    border-right: none;
+    border-bottom: 8px solid #f6f6f6;
+}
+.form-group.clearfix.btn-option {
+    padding-right: 10%;
+}
+.margin-left-20 {
+    margin-left: -14px;
+}
+}
+@media (max-width: 600px) {
+/*=====================REGISTRATION STYLING=======================*/
+
+#review-form .form-group > p {
+   font-size: 13px;
+   margin-bottom: 10px;
+}
+/*=====================LOGIN STYLING=======================*/
+.ml-btn-register {
+    margin-left: 33%;
+}
+.border-right-login {
+    border-right: none;
+    border-bottom: 8px solid #f6f6f6;
+}
+.form-group.clearfix.btn-option {
+    padding-right: 10%;
+}
+.margin-left-20 {
+    margin-left: -14px;
+}
+}
+@media (max-width: 480px) {
+/*=====================FAQ STYLING=======================*/
+.panel-heading > .panel-title a {
+        font-size: 14px ;       
+    }
+.panel-title a span {
+    background-color: #fcb134;
+    padding: 20px 30px 19px;
+    margin-right: 10px;
+}
+/*=====================REGISTRATION STYLING=======================*/
+#review-form .form-control {
+    width:100%
+}
+#review-form .form-group > p {
+   font-size: 10px;
+   margin-bottom: 10px;
+}
+.form-group.clearfix.btn-options {
+    padding-right: 0%;
+}
+/*=====================LOGIN STYLING=======================*/
+.ml-btn-register {
+    margin-left: 24%;
+}
+.ml-btn-register {
+    margin-left: 29%;
+}
+.border-right-login {
+    border-right: none;
+    border-bottom: 8px solid #f6f6f6;
+}
+.form-group.clearfix.btn-option {
+    padding-right: 10%;
+}
+.margin-left-20 {
+    margin-left: -14px;
+}
+}
+@media (max-width: 320px) {
+/*=====================FAQ STYLING=======================*/
+.panel-heading > .panel-title a {
+        font-size: 8px !important;       
+    }
+.panel-default > .panel-heading {
+    background-color: #FFF;
+    padding: 10px 0 !important;
+}
+
+.panel-title a span {
+    background-color: #fcb134;
+    padding: 20px 30px 10px !important;
+    margin-right: 10px;
+}
+/*=====================REGISTRATION STYLING=======================*/
+#review-form .form-control {
+    width:100%
+    
+}
+#review-form .form-group > p {
+   font-size: 10px;
+   margin-bottom: 10px;
+}
+.form-group.clearfix.btn-options {
+    padding-right: 0%;
+}
+/*=====================LOGIN STYLING=======================*/
+.ml-btn-register {
+    margin-left: 17%;
+}
+.border-right-login {
+    border-right: none;
+    border-bottom: 8px solid #f6f6f6;
+}
+.form-group.clearfix.btn-option {
+    padding-right: 11%;
+}
+.margin-left-20 {
+    margin-left: -14px;
+}
+.forgot-password  {
+    font-size: 12px;
+}
+
+}
+
